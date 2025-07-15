@@ -7,7 +7,7 @@ async function createProduct(req, res) {
     const product = await productService.createProduct(req.body);
     return res.status(201).json(product);
   } catch (err) {
-    return res.status(500).json({ error: err.message });
+    return res.status(500).json({error: err.message });
   }
 }
 
