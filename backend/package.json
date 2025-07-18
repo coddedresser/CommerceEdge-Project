@@ -4,7 +4,7 @@
   "description": "E-commerce backend API for Vercel deployment",
   "main": "api/index.js",
   "scripts": {
-    "start": "node api/index.js",
+    "start": "node index.js",
     "dev": "nodemon src/server.js"
   },
   "keywords": [],
