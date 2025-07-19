@@ -1,5 +1,5 @@
 const jwtProvider=require("../config/jwtProvider")
-const userService=require("../services/user.service")
+const userService=require("../services/user")
 
 
 const authenticate = async(req,res,next)=>{
