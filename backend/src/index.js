@@ -19,8 +19,8 @@ app.use("/api/users",userRouter)
 const productRouter=require("./routes/product.js");
 app.use("/api/products",productRouter);
 
-// const adminProductRouter=require("./routes/product.admin.routes.js");
-// app.use("/api/admin/products",adminProductRouter);
+const adminProductRouter=require("./routes/product.admin.js");
+app.use("/api/admin/products",adminProductRouter);
 
 const cartRouter=require("./routes/cart.js")
 app.use("/api/cart", cartRouter);
@@ -31,8 +31,8 @@ app.use("/api/cart_items",cartItemRouter);
 const orderRouter=require("./routes/order.js");
 app.use("/api/orders",orderRouter);
 
-// const paymentRouter=require("./routes/payment.js");
-// app.use('/api/payments',paymentRouter)
+const paymentRouter=require("./routes/payment.js");
+app.use('/api/payments',paymentRouter)
 
 const reviewRouter=require("./routes/review.js");
 app.use("/api/reviews",reviewRouter);
@@ -41,7 +41,7 @@ const ratingRouter=require("./routes/rating.js");
 app.use("/api/ratings",ratingRouter);
 
 // admin routes handler
-// const adminOrderRoutes=require("./routes/adminOrder.js");
-// app.use("/api/admin/orders",adminOrderRoutes);
+const adminOrderRoutes=require("./routes/adminOrder.js");
+app.use("/api/admin/orders",adminOrderRoutes);
 
 module.exports = app; 
