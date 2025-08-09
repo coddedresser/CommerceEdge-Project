@@ -23,7 +23,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import {
   findProducts,
-  findProductsByCategory,
 } from "../../../../Redux/Customers/Product/Action";
 import { deepPurple } from "@mui/material/colors";
 import { Backdrop, CircularProgress } from "@mui/material";
